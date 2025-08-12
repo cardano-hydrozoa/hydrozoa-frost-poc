@@ -1,0 +1,36 @@
+party Frost;
+party Faucet;
+
+policy True = 0xbd3ae991b5aafccafe5ca70758bd36a9b2f872f57f6d3a1ffa0eb777;
+
+tx fund() {
+    input source {
+      from: Faucet,
+    }
+    output dest {
+      to: Frost,
+      amount: source - fees,
+    }
+}
+
+tx spend(redeemer: Bytes) {
+    input locked {
+        from: True,
+        redeemer: redeemer,
+    }
+
+    collateral {
+        from: Frost,
+        min_amount: fees,
+    }
+
+    output target {
+        to: Faucet,
+        amount: locked - fees,
+    }
+
+    cardano::plutus_witness {
+        version: 3,
+        script: 0x5101010023259800a518a4d136564004ae69,
+    }
+}

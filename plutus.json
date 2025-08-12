@@ -1,0 +1,23 @@
+{
+  "preamble": {
+    "title": "sundae/hydrazoa-example",
+    "description": "An always succeeds contract",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.13+900bf91"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "always_succeed.always.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5101010023259800a518a4d136564004ae69",
+      "hash": "bd3ae991b5aafccafe5ca70758bd36a9b2f872f57f6d3a1ffa0eb777"
+    }
+  ]
+}

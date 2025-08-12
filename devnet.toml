@@ -1,0 +1,11 @@
+[[utxos]]
+address = "70bd3ae991b5aafccafe5ca70758bd36a9b2f872f57f6d3a1ffa0eb777"
+value = 100000000000
+
+[[utxos]]
+address = "@faucet"
+value = 100000000000
+
+[[utxos]]
+address = "6082182ff2c3e2c562e3fe922b22fd382565013bbbb11c80dd33798375"
+value = 100000000000
